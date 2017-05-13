@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otbo5ly</title>
+  <title>Otbo5ly-App-React</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
-<body ng-app='otbo5ly'>
+<body>
 
   <div class="container-fluid">
 
     <nav class="navbar navbar-inverse" style="margin: 25px 50px;
-      background-color: rgba(31, 31, 31, 0.7);
-      border-color: #484848;
-      z-index: 3;
-      position: absolute;
+    background-color: rgba(31, 31, 31, 0.7);
+    border-color: #484848;
+    z-index: 3;
+    position: absolute;
     ">
 
     <div class="container">
@@ -31,61 +31,58 @@
         </button>
 
         <a class="navbar-brand" href="#/" style="color: #257204;">Otbo5ly
-        <small> beta</small></a>
+          <small> beta</small></a>
 
-      </div>
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-        <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
           <!-- $root is for $rootScope to detect if userType is cooker or regular user
               and if user is logged in
               its value is set when user sign in or signup
-           -->
-          <li ng-show="$root.isCooker"><a href="#/users/{{ $root.UserName }}">My Profile</a></li>
-          <li ng-show="$root.isCooker"><a href="#/orders/{{ $root.UserName }}">My Orders</a></li>
-          <li ng-show="!$root.isLoggedIn"><a href="#/signin">Sign In</a></li>
-          <li ng-show="!$root.isLoggedIn"><a href="#/signup">Sign Up</a></li>
-          <li ng-show="$root.isLoggedIn"><a href="#/signout">Sign out</a></li>
-        </ul>
-        
-        <ul class="nav navbar-nav navbar-right">
+            -->
+            <li ng-show="$root.isCooker"><a href="#/users/{{ $root.UserName }}">My Profile</a></li>
+            <li ng-show="$root.isCooker"><a href="#/orders/{{ $root.UserName }}">My Orders</a></li>
+            <li ng-show="!$root.isLoggedIn"><a href="#/signin">Sign In</a></li>
+            <li ng-show="!$root.isLoggedIn"><a href="#/signup">Sign Up</a></li>
+            <li ng-show="$root.isLoggedIn"><a href="#/signout">Sign out</a></li>
+          </ul>
 
-          <li><a href="http://www.rbk.org" target="_blank">RBK</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Developers <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://github.com/montaserRahmani" target="_blank">M. Rahmani</a></li>
-              <li><a href="https://github.com/saeedhomsy" target="_blank">S. Alhomsi</a></li>
-              <li><a href="https://github.com/ZainabOmar" target="_blank">Z. Himmami</a></li>
-              <li><a href="https://github.com/HadeelBaloush" target="_blank">H. Baloush</a></li>
-            </ul>
-          </li>
-          
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+          <ul class="nav navbar-nav navbar-right">
 
+            <li><a href="http://www.rbk.org" target="_blank">RBK</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Developers <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/montaserRahmani" target="_blank">M. Rahmani</a></li>
+                <li><a href="https://github.com/saeedhomsy" target="_blank">S. Alhomsi</a></li>
+                <li><a href="https://github.com/ZainabOmar" target="_blank">Z. Hammami</a></li>
+                <li><a href="https://github.com/HadeelBaloush" target="_blank">H. Baloush</a></li>
+              </ul>
+            </li>
 
-</div>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 
-<ng-view></ng-view>
+  </div>
 
 </div>
 <div class="col-xs-12" style="height: 200px"></div>
 <script src="lib/jquery.js"></script>
-<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-<script src="app/account/auth.js"></script>
-<script src="app/profile/profile.js"></script>
-<script src="app/main/main.js"></script>
-<script src="app/order/order.js"></script>
-<script src="app/services.js"></script>
-<script src="app/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src="compiled/app/account/auth.js"></script>
+<script src="compiled/app/profile/profile.js"></script>
+<script src="compiled/app/main/main.js"></script>
+<script src="compiled/app/order/order.js"></script>
+<script src="compiled/app/services.js"></script>
+<script src="compiled/app/app.js"></script>
 
 </body>
 </html>
