@@ -1,5 +1,9 @@
-
 class App extends React.Component {
+
+	constructor(props) {
+		super(props);
+	}
+
 	render() {
 		return (
 			<div style = {{backgroundImage: 'url(/assets/header-bg.jpg)',
@@ -23,13 +27,13 @@ class App extends React.Component {
 		</button>
 		<a className="navbar-brand" href="#/" style = {{color: "#257204"}}>Otbo5ly
 		<small> beta</small></a>
-		</div>``
+		</div>
 		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul className="nav navbar-nav">
 		<li><a href="#/users">My Profile</a></li>
 		<li><a href="#/orders">My Orders</a></li>
-		<li><a href="#/signin">Sign In</a></li>
-		<li><a href="#/signup">Sign Up</a></li>
+		<li> <a href = "#/signin">Sign In</a></li>
+		<li><a href="<SignUp></SignUp>">Sign Up</a></li>
 		<li><a href="#/signout">Sign out</a></li>
 		</ul>
 		<ul className="nav navbar-nav navbar-right">
@@ -57,6 +61,10 @@ class App extends React.Component {
 		</div>
 		</div>
 		<MainPage></MainPage>
+		<Router history={hashHistory}>
+		<Route path='/signup' component={SignUp}>signup</Route>
+		<Route path='signin' component={SignIn}>signin</Route>
+		</Router>
 		</div>
 		)}
 	}
