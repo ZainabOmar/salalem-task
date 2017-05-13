@@ -1,0 +1,87 @@
+<div class="row" style="
+background: url('assets/header-bg.jpg');
+background-position: bottom;
+min-height: 500px;
+z-index: 2;
+padding-top: 100px;
+">
+
+<div class="row" style="padding-bottom: 50px;margin:0px;">
+
+<div class="col-md-10 col-md-offset-1 text-center">
+  <h1 style="font-weight: bold;color: #fff;">Welcome to Otbo5ly!</h1>
+  <h2 style="color: #dedede;">Hungry ? want delicious home-made middle eastren food ?</h2>
+  <h2 style="color: #dedede;">YES! you are in the right place!</h2>
+
+  <div class="col-md-6 col-xs-12" style="color: #fff;margin-top: 20px;">
+  <i class="glyphicon glyphicon-user" style="font-size: 5em;"></i>
+  <br>
+
+  <p style="padding: 20px;font-size: 1.3em;">Want to order food ?</p>
+  <button href="#/signup" class="btn btn-lg btn-primary">Sign up now and start ordering!</button>
+
+</div>
+
+<div class="col-md-6 col-xs-12" style="color: #fff;margin-top: 20px;border-left: 1px solid;">
+
+<i class="glyphicon glyphicon-cutlery" style="font-size: 5em;"></i>
+<br>
+
+<p style="padding: 20px;font-size: 1.3em;">Ready to cook and sell ?</p>
+
+<button href="#/signup" class="btn btn-lg btn-primary">Sign up now and start selling!</button></div>
+
+</div></div>
+
+
+</div>
+
+
+<div class="row" style="margin-top: 40px;" ng-controller="MainController">
+
+<div class="col-md-3 col-md-offset-1 col-xs-12">
+
+<div class="panel panel-primary">
+
+  <div class="panel-heading">
+    <h3 class="panel-title">Top Cookers</h3>
+  </div>
+  
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="cooker in data.cookings"><a href="#/users/{{ cooker.UserName }}"> {{ cooker.FullName }}</a></li>
+  </ul>
+
+  </div>
+  </div>
+
+  <div class="col-md-7 col-xs-12">
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+        <h3 class="panel-title">Today's Cookings</h3>
+      </div>
+
+      <ul class="list-group">
+
+        <li class="list-group-item" ng-repeat="cooking in data.cookings">
+          <div class="row">
+            <div class="col-md-4">
+              <img ng-if="!cooking.ImgUrl" src="/assets/chef.png" class="img-responsive thumbnail" style="margin: auto;">
+              <img ng-if="cooking.ImgUrl" src="/{{ cooking.ImgUrl }}" class="img-responsive thumbnail" style="margin: auto;">
+            </div>
+            <div class="col-md-8">
+             <div class="caption" style="display: inline-block;height: 100%;">
+             <h3>{{ cooking.Name }}</h3>
+             <p><a href="#/users/{{ cooking.UserName }}">{{ cooking.FullName }}</a></p>
+             <p class="btn btn-info" style="margin-bottom: 20px">{{ cooking.Price }} JOD</p>
+             <p><a ng-click="setOrder($root.UserID, cooking.cookerID, cooking.cookNameID, cooking.FullName, cooking.Name)" class="btn btn-primary" role="button">Order Now</a> </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+    </ul>
+</div>
+</div>
+</div>
