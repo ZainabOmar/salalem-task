@@ -18,9 +18,9 @@ var MainPage = (props) => (
   </div>
   </div>
   </div>
- 
+  
 
-   <div className="row" style= {{marginTop: '40px'}}>
+  <div className="row" style= {{marginTop: '40px'}}>
   <div className="col-md-3 col-md-offset-1 col-xs-12">
   <div className="panel panel-primary">
   <div className="panel-heading">
@@ -58,15 +58,9 @@ var MainPage = (props) => (
   </ul>
   </div>
   </div>
-</div>
+  </div>
   </div>
   );
-
-// PropTypes tell other developers what `props` a component expects
-// Warnings will be shown in the console when the defined rules are violated
-// MainPage.propTypes = {
-//   videos: React.PropTypes.array.isRequired
-// };
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope.
 // `var` declarations will only exist globally where explicitly defined.
