@@ -18,9 +18,9 @@ var MainPage = (props) => (
   </div>
   </div>
   </div>
-  
+ 
 
-  <div className="row" style= {{marginTop: '40px'}}>
+   <div className="row" style= {{marginTop: '40px'}}>
   <div className="col-md-3 col-md-offset-1 col-xs-12">
   <div className="panel panel-primary">
   <div className="panel-heading">
@@ -58,7 +58,7 @@ var MainPage = (props) => (
   </ul>
   </div>
   </div>
-  </div>
+</div>
   </div>
   );
 

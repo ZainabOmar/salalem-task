@@ -1,5 +1,6 @@
 
 var Order = (props) => (
+	
 	<div className="row" style= {{
 		background: "url('assets/header-bg.jpg')",
 		backgroundPosition: 'bottom',
@@ -50,4 +51,6 @@ var Order = (props) => (
 	</div>
 	</div>
 
-	window.Order = Order;
+	)
+
+window.Order = Order;
