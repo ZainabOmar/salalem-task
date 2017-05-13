@@ -1,0 +1,5 @@
+'use strict';
+
+require('./angular-mocks');
+module.exports = 'ngMock';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL2NsaWVudC9saWIvYW5ndWxhci1tb2Nrcy9uZ01vY2suanMiXSwibmFtZXMiOlsicmVxdWlyZSIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBQUFBLFFBQVEsaUJBQVI7QUFDQUMsT0FBT0MsT0FBUCxHQUFpQixRQUFqQiIsImZpbGUiOiJuZ01vY2suanMiLCJzb3VyY2VzQ29udGVudCI6WyJyZXF1aXJlKCcuL2FuZ3VsYXItbW9ja3MnKTtcclxubW9kdWxlLmV4cG9ydHMgPSAnbmdNb2NrJztcclxuIl19

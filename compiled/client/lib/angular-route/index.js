@@ -1,0 +1,5 @@
+'use strict';
+
+require('./angular-route');
+module.exports = 'ngRoute';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL2NsaWVudC9saWIvYW5ndWxhci1yb3V0ZS9pbmRleC5qcyJdLCJuYW1lcyI6WyJyZXF1aXJlIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsUUFBUSxpQkFBUjtBQUNBQyxPQUFPQyxPQUFQLEdBQWlCLFNBQWpCIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnLi9hbmd1bGFyLXJvdXRlJyk7XHJcbm1vZHVsZS5leHBvcnRzID0gJ25nUm91dGUnO1xyXG4iXX0=
